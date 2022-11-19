@@ -5,9 +5,9 @@ body{
 }
 
 img{
-   margin: 20px;
-    width: 400px;
-    border-radius: 16px;
+   margin: 1.25em;
+    width: 25em;
+    border-radius: 1em;
     transition: 0.3s;
 }
 img:hover{
@@ -15,11 +15,11 @@ img:hover{
 }
 
 .fundo{
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 5em;
+    margin-right: 5em;
     background-color: #3809a5b1;
     border: solid #3809a5b1 4px;
-    border-radius: 16px;
+    border-radius: 1em;
     justify-content: center;
     box-shadow: rgb(0, 140, 255) 0px 5px 15px
 }
