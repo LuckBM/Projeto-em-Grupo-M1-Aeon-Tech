@@ -67,13 +67,17 @@ iniciarLoja = () => {
         <div class="produto-single">
             <img src="`+val.img+`" />
             <p>`+val.nome+`</p>
-            <a key="`+val.id+`" href="#" class="id_add">adicionar</a>
-            <a key="`+val.id+`" href="#" class="id_del">remover</a>
+            <a key="`+val.id+`" href="#" class="id_add">ﾠ+ﾠ</a>
+            <a key="`+val.id+`" href="#" class="id_del">ﾠ-ﾠ</a>
 
-            
+            <style>
+            .id_add{background-color: #009BAB}
+            .id_del{background-color: #AB1E00;}
+            </style>
             </div>
             `;
     })
+        
 }
 iniciarLoja();
 
@@ -107,22 +111,34 @@ for(var i = 0; i < a_del.length; i++){
         return false;
     })
 }
-
+var containerCarrinho = document.getElementById('carrinho');
+containerCarrinho.innerHTML = `
+    
+`;
 /* Declara função que atualiza as informações mostradas no carrinho */
 atualizarCarrinho = () => {
+    
     var containerCarrinho = document.getElementById('carrinho');
     containerCarrinho.innerHTML = "";
-        items.map((val)=>{
-            val.preco = parseInt(val.preco);
-            val.quantidade = parseInt(val.quantidade);
-            val.total = val.quantidade * val.preco;
+    containerCarrinho.innerHTML+= `
+        <h1 id="titulo-carrinho">CARRINHO</h1>
+        `;
+    
+    
+    items.map((val)=>{
+        val.preco = parseInt(val.preco);
+        val.quantidade = parseInt(val.quantidade);
+        val.total = val.quantidade * val.preco;
 
-            if(val.quantidade > 0){
-                containerCarrinho.innerHTML+= `
-                <p>`+val.nome+` | quantidade: `+val.quantidade+` | total: `+val.total+`</p>
-                <hr>
-                `;
+    if(val.quantidade > 0){
+        document.getElementById('carrinho').style.opacity = "1";
         
+
+        containerCarrinho.innerHTML+= `
+        <p>`+val.nome+` <br> Quantidade: `+val.quantidade+` <br> Total: R$ `+val.total+`</p>
+        <hr>
+        `;
         }
+    
 })
 }
