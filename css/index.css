@@ -39,8 +39,8 @@ body{
 }
 
 #bloco1, #bloco2, #bloco3, #bloco4, #bloco5, #bloco6{
-    width: 106px;
-    height: 106px;
+    width: 6.625em;
+    height: 6.625em;
 }
 .fileira1 img, .fileira2 img{
     width: 100%;
@@ -85,7 +85,7 @@ body{
     opacity: 100%;
     cursor: pointer;
     background-color: #9263f4;
-    border-radius: 20px;
+    border-radius: 1.25em;
     transform: /*rotateZ(360deg)*/ scale(1.5);
 }
 
@@ -97,10 +97,10 @@ body{
 .sobre{
     background-color: #0a516d;
 color: #ffffff;
-margin-left: 26px;
-margin-right: 26px;
+margin-left: 1.625em;
+margin-right: 1.625em;
 border: solid 20px #0a516d;
-border-radius: 16px;
+border-radius: 1.25em;
 }
 
 footer{
