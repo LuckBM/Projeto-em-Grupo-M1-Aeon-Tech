@@ -1,4 +1,4 @@
-# Projeto-em-Grupo-M1-Aeon-Tech
+# Projeto em Grupo M1 Aeon Tech
 
 Equipe:
 
@@ -11,3 +11,5 @@ Emerson de Souza Rolemberg: github.com/EmersonRolemberg
 Maria Helloá: github.com/MariaHelloa
 
 Luiz Fellipe: github.com/felpferreira
+
+https://luckbm.github.io/Projeto-em-Grupo-M1-Aeon-Tech/
